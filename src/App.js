@@ -20,7 +20,7 @@ import imgSer5 from './componants/img/react.png';
 import imgSer6 from './componants/img/25876192_7100372.png';
 import imgSer7 from './componants/img/357319339_0ecca09a-5687-4cb3-a6dc-e16a229d2ea6.png';
 import imgWork1 from './componants/img/hr-project.png';
-import imgWork2 from './componants/img/planes-View.png';
+import imgWork2 from './componants/img/Room-View.png';
 import imgSkils1 from './componants/img/html.png';
 import imgSkils2 from './componants/img/css.png';
 import imgSkils3 from './componants/img/js.png';
