@@ -1,3 +1,8 @@
+* {
+ font-family: "Libertinus Serif", serif;
+  /* font-weight: 400; */
+  font-style: normal;
+}
 body{
     background-color: #f2f2f2;
     width: 70%;
@@ -119,6 +124,9 @@ nav ul li a p:hover{
     font-size: 24px;
     cursor: pointer;
 }
+.social-media a{
+    color: black;
+}
 .btn:hover , .social-media i:hover , .contact_me_btn button:hover{
     transform: scale(1.2);
 }
@@ -200,8 +208,7 @@ nav ul li a p:hover{
     border-radius: 12px;
     box-shadow: 0 2px 5px 0;
     width: 300px;
-    /* background-color: white; */
-    background: linear-gradient( to top , transparent 50% , #d49a74 50%);
+    background: linear-gradient( to top , white 50% , #d49a74 50%);
     background-size: 100% 200%;
     background-position: bottom;
     transition: background-position 0.5s ease;
@@ -243,8 +250,9 @@ nav ul li a p:hover{
     margin-bottom: 5px;
 }
 .my_work_view_img img{
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
 }
 .my_work_view2{
@@ -252,19 +260,22 @@ nav ul li a p:hover{
     width: 90%;
     background-color: white;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 12px;
     justify-self: center;
     box-shadow: 0px 1px 5px 0px;
-
+}
+.my_work_view2 div{
+    text-align: center;
 }
 .my_work_view_img2{
     margin: -20px;
     margin-bottom: 10px;
 }
 .my_work_view_img2 img{
-       width: 100%;
-    height: 270px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 12px 12px 0 0;
 
 }

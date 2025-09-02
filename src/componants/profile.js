@@ -10,10 +10,10 @@ function Profile(){
                 <a href="#contact_me"><button className="btn">Contact me</button></a>
                 <div className="social-media">
                     <ul>
-                        <li><i className="fa-brands fa-github"></i></li>
-                        <li><i className="fa-brands fa-linkedin"></i></li>
-                        <li><i className="fa-brands fa-facebook"></i></li>
-                        <li><i className="fa-brands fa-instagram"></i></li>
+                        <li><a href='https://github.com/essam-developer'><i className="fa-brands fa-github"></i></a></li>
+                        <li><a href='https://www.linkedin.com/in/essam-zuhair-322203382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'><i className="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href='https://www.facebook.com/share/17EZ8AcZ58/'><i className="fa-brands fa-facebook"></i></a></li>
+                        <li><a href='https://www.instagram.com/e3z_564?igsh=MTUzOTFjeW9tOG96NA=='><i className="fa-brands fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>

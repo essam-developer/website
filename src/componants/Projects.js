@@ -2,14 +2,14 @@
 
 function Projects(project){
     return(
-        <div className="my_work_view">
-            <div>
-                <h3>{project.id}</h3>
-                <h1>{project.title}</h1>
-                <p>{project.discr}</p>
+        <div className="my_work_view2">
+            <div className="my_work_view_img2">
+                <img src={project.img} alt="" />
             </div>
-            <div className="my_work_view_img">
-                <img src={project.urlimg} alt="" />
+            <div>
+                <h4>{project.h3}</h4>
+                <h3>{project.h1}</h3>
+                <p>{project.p}</p>
             </div>
         </div>
     )

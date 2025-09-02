@@ -21,7 +21,7 @@ function NavBar(){
     return(
         <>
          <nav>
-            <div><h1>Developer <span>Essam</span></h1></div>
+            <div><h3>Developer <span>Essam</span></h3></div>
             <div className="nav_menu">
                 <ul>
                     <li><a href="#about-me"><p>About me</p></a></li>

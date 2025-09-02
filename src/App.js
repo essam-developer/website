@@ -6,6 +6,7 @@ import Profile from './componants/Profile';
 import AboutMe from './componants/aboutMe';
 import Services from './componants/Services';
 import MyWork from './componants/MyWork';
+import Projects from './componants/Projects';
 import Scroll from './componants/Scroll';
 import Skils from './componants/Skils';
 import ContactMe from './componants/ContactMe';
@@ -15,9 +16,9 @@ import imgSer1 from './componants/img/search-engine_3110271.png';
 import imgSer2 from './componants/img/web-design_13191231.png';
 import imgSer3 from './componants/img/search_16587037.png';
 import imgSer4 from './componants/img/service_18331806.png';
-import imgSer5 from './componants/img/react.jpg';
-import imgSer6 from './componants/img/25876192_7100372.jpg';
-import imgSer7 from './componants/img/357319339_0ecca09a-5687-4cb3-a6dc-e16a229d2ea6.jpg';
+import imgSer5 from './componants/img/react.png';
+import imgSer6 from './componants/img/25876192_7100372.png';
+import imgSer7 from './componants/img/357319339_0ecca09a-5687-4cb3-a6dc-e16a229d2ea6.png';
 import imgWork1 from './componants/img/hr-project.png';
 import imgWork2 from './componants/img/Screenshot (66).png';
 import imgSkils1 from './componants/img/html.png';
@@ -73,6 +74,13 @@ function App() {
         <Title name = 'latest works' span = 'Project'/>
         {work_li.map((works)=>(
           <MyWork
+           img = {works.img}
+           h3 = {works.h3}
+           h1 = {works.h1}
+           p = {works.p} />
+        ))}
+         {work_li.map((works)=>(
+          <Projects
            img = {works.img}
            h3 = {works.h3}
            h1 = {works.h1}
