@@ -4,12 +4,12 @@ import { useState } from "react";
 function NavBar(){
        const [liItem , setliItem] = useState(0);
     const menuItems = [
-    { id: 0, i:'fa-brands fa-github', href: "#", label: "Home" },
-    { id: 1, i:'fa-brands fa-github', href: "#about-me", label: "About me" },
-    { id: 2, i:'fa-brands fa-github', href: "#Services", label: "Services" },
-    { id: 3, i:'fa-brands fa-github', href: "#my_work", label: "Experience" },
-    { id: 4, i:'fa-brands fa-github', href: "#my_skils", label: "Skills" },
-    { id: 5, i:'fa-brands fa-github', href: "#contact_me", label: "Contact_me" },
+    { id: 0, i:'fa-solid fa-house', href: "#", label: "Home" },
+    { id: 1, i:'fa-solid fa-user', href: "#about-me", label: "About me" },
+    { id: 2, i:'fa-solid fa-globe', href: "#Services", label: "Services" },
+    { id: 3, i:'fa-solid fa-briefcase', href: "#my_work", label: "Experience" },
+    { id: 4, i:'fa-solid fa-list-check', href: "#my_skills", label: "Skills" },
+    { id: 5, i:'fa-solid fa-address-card', href: "#contact_me", label: "Contact_me" },
   ];
 
 
@@ -27,7 +27,7 @@ function NavBar(){
                     <li><a href="#about-me"><p>About me</p></a></li>
                     <li><a href="#Services"><p>Services</p></a></li>
                     <li><a href="#my_work"><p>Experience</p></a></li>
-                    <li><a href="#my_skils"><p>Skils</p></a></li>
+                    <li><a href="#my_skills"><p>Skills</p></a></li>
                 </ul>
             </div>
             <div className="nav_btn">
