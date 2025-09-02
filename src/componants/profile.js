@@ -1,4 +1,4 @@
-
+import imgProfile from './img/IMG-20250622-WA00224.png'
 function Profile(){
     return(
          <div className="img">
@@ -18,7 +18,7 @@ function Profile(){
                 </div>
             </div>
             <div className="img_profile">
-                <img src="../img/IMG-20250622-WA00224.png" alt="" />
+                <img src={imgProfile} alt="" />
             </div>
         </div>
     )

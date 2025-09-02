@@ -2,44 +2,62 @@
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Title from './componants/Title_divs';
-import Profile from './componants/profile';
-import About_me from './componants/about_me';
+import Profile from './componants/Profile';
+import AboutMe from './componants/aboutMe';
 import Services from './componants/Services';
-import My_work from './componants/My_work';
+import MyWork from './componants/MyWork';
 import Scroll from './componants/Scroll';
 import Skils from './componants/Skils';
-import Contact_me from './componants/Contact_me';
-import Down_bar from './componants/Down_bar';
-import Nav_bar from './componants/Nav_bav';
+import ContactMe from './componants/ContactMe';
+import DownBar from './componants/DownBar';
+import NavBar from './componants/NavBar';
+import imgSer1 from './componants/img/search-engine_3110271.png';
+import imgSer2 from './componants/img/web-design_13191231.png';
+import imgSer3 from './componants/img/search_16587037.png';
+import imgSer4 from './componants/img/service_18331806.png';
+import imgSer5 from './componants/img/react.jpg';
+import imgSer6 from './componants/img/25876192_7100372.jpg';
+import imgSer7 from './componants/img/357319339_0ecca09a-5687-4cb3-a6dc-e16a229d2ea6.jpg';
+import imgWork1 from './componants/img/hr-project.png';
+import imgWork2 from './componants/img/Screenshot (66).png';
+import imgSkils1 from './componants/img/html.png';
+import imgSkils2 from './componants/img/css.png';
+import imgSkils3 from './componants/img/js.png';
+import imgSkils4 from './componants/img/react.png';
+import imgSkils5 from './componants/img/gethup.png';
+import imgSkils6 from './componants/img/git.png';
 
 function App() {
     const serv_li = [
-    {img :'../img/search-engine_3110271.png' , h2:'Website Development' , p:'creating responsive, modern websites using the latest technologies and best practices for optimal user experience for optimal user experience and performance'},
-    {img :'../img/web-design_13191231.png' , h2:'UI/UX Implementation' , p:' responsive, modern websites using the latest technologies and best practices for optimal user experience for optimal user experience and performance'},
-    {img :'../img/search_16587037.png' , h2:'Website Optimization' , p:' responsive, modern websites using the latest technologies and best practices for optimal user experience for optimal user experience and performance'},
-    {img :'../img/service_18331806.png' , h2:'Maintenance & Support' , p:' responsive, modern websites using the latest technologies and best practices for optimal user experience for optimal user experience and performance'},
+    {img :imgSer1 , h2:'Website Development' , p:'creating responsive, modern websites using the latest technologies and best practices for optimal user experience for optimal user experience and performance'},
+    {img :imgSer5 , h2:'React Application' , p:'Building interactive single-page applications with React, focusing on component reusability, state management, and optimal performance.'},
+    {img :imgSer2 , h2:'UI/UX Implementation' , p:'Transforming design mockups into pixel-perfect, interactive interfaces that provide exceptional user experiences across all devices.'},
+    {img :imgSer6 , h2:'API Connection' , p:'Connecting applications with APIs to enable dynamic data, real-time updates, and seamless functionality..'},
+    {img :imgSer7 , h2:'Multilingual & Dark/Light' , p:'Websites that support both Arabic (RTL) and English, with an option to switch between light and dark modes for better user experience'},
+    {img :imgSer3 , h2:'Website Optimization' , p:'Improving website speed, SEO performance, and accessibility to ensure your site ranks well and provides great user experience.'},
+    {img :imgSer4 , h2:'Maintenance & Support' , p:'Providing ongoing maintenance, updates, bug fixes, and technical support to keep your website running smoothly and securely'},
                   ]
 
   const work_li = [
-    {img: '../img/hr-project.png', h3:'PROJECT 1', h1:'Website HR SYSTEM', p:'Human Resource Management System Website'},
-    {img: '../img/Screenshot (66).png', h3:'PROJECT 2', h1:'Website Hotel Reservation', p:'an integrated website for hotel reservation in aden'},
+    {img:imgWork1, h3:'PROJECT 1', h1:'Website HR SYSTEM', p:'Human Resource Management System Website'},
+    {img:imgWork2, h3:'PROJECT 2', h1:'Website Hotel Reservation', p:'an integrated website for hotel reservation in aden'},
   ]            
   const skils = [
-    {img:'../img/html.png' , h1:'HTML5'},
-    {img:'../img/css.png' , h1:'CSS'},
-    {img:'../img/js.png' , h1:'JavaScript'},
-    {img:'../img/react.png' , h1:'REACT'},
-    {img:'../img/gethup.png' , h1:'GITHUP'},
-    {img:'../img/git.png' , h1:'GIT'},
+    {img:imgSkils1 , h1:'HTML5'},
+    {img:imgSkils2 , h1:'CSS'},
+    {img:imgSkils3 , h1:'JavaScript'},
+    {img:imgSkils4 , h1:'REACT'},
+    {img:imgSkils5 , h1:'GITHUP'},
+    {img:imgSkils6 , h1:'GIT'},
   ]    
   return (
     <div className="App">
       <header>
-       <Nav_bar/>
+       <NavBar/>
         <Profile/>
       </header>
       <Scroll />
-      <About_me />
+      <AboutMe />
       <div id='Services' className='Services'>
          <Title name = 'latest Services' span = 'Services'/>
          <ul>
@@ -54,7 +72,7 @@ function App() {
        <div id="my_work" className="my_work">
         <Title name = 'latest works' span = 'Project'/>
         {work_li.map((works)=>(
-          <My_work
+          <MyWork
            img = {works.img}
            h3 = {works.h3}
            h1 = {works.h1}
@@ -71,8 +89,8 @@ function App() {
            ))}</ul>
         </div>
       </div>
-      <Contact_me/>
-      <Down_bar/>
+      <ContactMe/>
+      <DownBar/>
     </div>
   );
 }

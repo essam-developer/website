@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
-function Contact_me(){
+function ContactMe(){
     const [name , setname] = useState("");
     const [err_name , setErrname] = useState(true);
     const [err_email , setErremail] = useState(true);
@@ -95,7 +95,7 @@ if(validate()){
     </form>
     )
 }
-export default Contact_me;
+export default ContactMe;
 
 
 

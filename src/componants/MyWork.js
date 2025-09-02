@@ -1,6 +1,6 @@
 
 
-function My_work(work){
+function MyWork(work){
     return(
          <div class="my_work_view">
             <div class="my_work_view_img">
@@ -15,4 +15,4 @@ function My_work(work){
     )
 }
 
-export default My_work;
+export default MyWork;

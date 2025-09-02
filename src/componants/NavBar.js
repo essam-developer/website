@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function Nav_bar(){
+function NavBar(){
        const [liItem , setliItem] = useState(0);
     const menuItems = [
     { id: 0, i:'fa-brands fa-github', href: "#", label: "Home" },
@@ -50,4 +50,4 @@ function Nav_bar(){
         </>
     )
 }
-export default Nav_bar;
+export default NavBar;
